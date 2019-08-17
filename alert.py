@@ -1,6 +1,6 @@
 #  Copyright (c) 2019
 #  Author: Naomi Bonnin
-#  Last Modified: 8/17/19, 12:23 PM
+#  Last Modified: 8/17/19, 3:01 PM
 #  Description:  A visual alerting system for Laurel Volunteer Rescue Squad
 
 import time
@@ -76,16 +76,14 @@ def bulb_scan():
 # Downloads the latest unread email from gmail and returns the entire body of the email
 def pull_email():
     try:
-        server = IMAPClient(host)
-        server.login(user, password)
         server.select_folder('INBOX')
         messages = server.search('UNSEEN')
         for uid, message_data in server.fetch(messages, 'RFC822').items():
             email_message = email.message_from_bytes(message_data[b'RFC822'])
             email_text = email_message.get_payload(decode=True)
             server.add_flags(uid, ['\\SEEN'])
-            server.logout()
             split_email = email_text.decode('UTF-8').split('\r\n')
+            server.idle()
             return split_email
     except Exception as exp:
         logger.error(str(exp))
@@ -154,18 +152,21 @@ def set_pattern(counts, bulb_address_list):
 bulb_addresses = bulb_scan()
 logger.info(bulb_addresses)
 open_config()
-print(host)
-print(user)
-print(password)
+
+server = IMAPClient(host)
+server.login(user, password)
+server.select_folder('INBOX')
+server.idle()
 
 while True:
     try:
-        text = pull_email()
-        if text is not None:
-            units = find_units(text[3])
-            set_pattern(units, bulb_addresses)
-            time.sleep(15)
-        else:
-            time.sleep(1)
+        response = server.idle_check(timeout=15)
+        if response:
+            server.idle_done()
+            text = pull_email()
+            if text is not None:
+                units = find_units(text[3])
+                set_pattern(units, bulb_addresses)
     except Exception as e:
         logging.error(str(e))
+        server.idle_done()
