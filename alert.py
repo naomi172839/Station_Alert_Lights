@@ -1,15 +1,15 @@
 #  Copyright (c) 2019
 #  Author: Naomi Bonnin
-#  Last Modified: 8/17/19, 9:22 AM
+#  Last Modified: 8/17/19, 12:23 PM
 #  Description:  A visual alerting system for Laurel Volunteer Rescue Squad
 
-import subprocess
 import time
 import email
 import logging
 from imapclient.imapclient import IMAPClient
 import flux_led
 import webcolors
+import xml.etree.ElementTree as ET
 
 # Prevents script from failing on login
 time.sleep(10)
@@ -20,10 +20,9 @@ colorRed = webcolors.name_to_rgb("red")
 colorPurple = webcolors.name_to_rgb("purple")
 colorGreen = webcolors.name_to_rgb("green")
 colorYellow = webcolors.name_to_rgb("yellow")
-colorOff = "0,0,0"
-host = 'imap.gmail.com'
-user = 'station49alerts'
-password = 'Wicked2013'
+host = ""
+user = ""
+password = ""
 
 # Initializes logger and opens stream.  Change path for each system
 logger = logging.getLogger('alerting')
@@ -37,6 +36,29 @@ logger.info('Started')
 print("Started")
 
 
+def open_config():
+    with open('config.xml') as config:
+        set_config(parse_config(config))
+
+
+def parse_config(config):
+    tree = ET.parse(config)
+    root = tree.getroot()
+    config_items = {}
+    for item in root.findall('./'):
+        config_items[item.tag] = item.text
+    return config_items
+
+
+def set_config(config_items):
+    global host
+    global user
+    global password
+    host = config_items['hostname']
+    user = config_items['username']
+    password = config_items['password']
+
+
 # noinspection PyGlobalUndefined
 def bulb_scan():
     try:
@@ -48,7 +70,7 @@ def bulb_scan():
             logger.info(ip_addresses)
         return ip_addresses
     except Exception as exc:
-        logger.log(str(exc))
+        logger.error(str(exc))
 
 
 # Downloads the latest unread email from gmail and returns the entire body of the email
@@ -65,8 +87,8 @@ def pull_email():
             server.logout()
             split_email = email_text.decode('UTF-8').split('\r\n')
             return split_email
-    except Exception as e:
-        logger.error(str(e))
+    except Exception as exp:
+        logger.error(str(exp))
 
 
 # Searches through a string for each unit and returns an array of how many times each unit appeared
@@ -80,8 +102,8 @@ def find_units(body):
         wr1 = str(body).count('WR849')
         units_found = [amb1, pa1, e1, re1, sq1, wr1]
         return units_found
-    except Exception as e:
-        logger.error(str(e))
+    except Exception as exp:
+        logger.error(str(exp))
 
 
 def amb(counts):
@@ -118,18 +140,23 @@ def set_pattern(counts, bulb_address_list):
         colors.append(colorYellow)
 
     if len(colors) == 1:
-        print("True")
-        print(bulb_address_list)
         for address in bulb_address_list:
-            print(address)
-            print(colors)
+            logger.info(colors)
             bulb = flux_led.WifiLedBulb(address)
-            bulb.setRgb(colors)
+            bulb.setRgb(colors, True, None)
+    else:
+        for address in bulb_address_list:
+            logger.info(colors)
+            bulb = flux_led.WifiLedBulb(address)
+            bulb.setCustomPattern(colors, 100, "jump")
 
 
 bulb_addresses = bulb_scan()
-time.sleep(10)
 logger.info(bulb_addresses)
+open_config()
+print(host)
+print(user)
+print(password)
 
 while True:
     try:
