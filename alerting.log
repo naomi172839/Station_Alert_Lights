@@ -1,0 +1,90 @@
+2019-08-16 20:20:50,586 INFO (MainThread) Started
+2019-08-16 20:20:51,609 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:51,919 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:52,555 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:53,258 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:53,762 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:54,169 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:54,583 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:55,316 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:56,115 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:56,387 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:57,144 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:57,555 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:57,856 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:58,572 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:59,397 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:20:59,802 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:00,437 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:01,242 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:02,054 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:02,877 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:03,591 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:04,102 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:05,230 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:05,639 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:05,946 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:06,341 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:06,765 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:07,482 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:07,789 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:08,650 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:09,125 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:09,837 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:10,658 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:11,303 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:12,090 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:13,012 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:13,421 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:14,138 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:14,444 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:15,165 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:15,878 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:16,602 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:17,008 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:17,827 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:18,239 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:18,894 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:21:19,669 ERROR (MainThread) b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2019-08-16 20:22:02,089 INFO (MainThread) Started
+2019-08-16 20:22:03,819 INFO (MainThread) Ambulance
+2019-08-16 20:57:48,327 INFO (MainThread) Started
+2019-08-16 21:00:22,951 INFO (MainThread) Started
+2019-08-16 21:01:56,008 INFO (MainThread) Started
+2019-08-16 21:02:43,559 INFO (MainThread) Started
+2019-08-16 21:06:07,860 INFO (MainThread) Started
+2019-08-16 21:06:17,917 INFO (MainThread) 192.168.0.34
+2019-08-16 21:07:28,866 INFO (MainThread) ['255,0,0']
+2019-08-16 21:09:09,300 INFO (MainThread) Started
+2019-08-16 21:09:19,396 INFO (MainThread) 192.168.0.34
+2019-08-16 21:09:28,170 INFO (MainThread) ['255,0,0']
+2019-08-16 21:09:28,170 INFO (MainThread) 1
+2019-08-16 21:11:10,936 INFO (MainThread) Started
+2019-08-16 21:11:21,026 INFO (MainThread) 192.168.0.34
+2019-08-16 21:12:49,798 INFO (MainThread) Started
+2019-08-16 21:12:59,809 INFO (MainThread) 192.168.0.34
+2019-08-16 21:12:59,809 INFO (MainThread) 192.168.0.34
+2019-08-16 21:13:00,540 INFO (MainThread) ['255,0,0']
+2019-08-16 21:13:00,540 INFO (MainThread) 1
+2019-08-16 21:14:13,718 INFO (MainThread) Started
+2019-08-16 21:14:23,732 INFO (MainThread) 192.168.0.34
+2019-08-16 21:14:23,732 INFO (MainThread) 192.168.0.34
+2019-08-16 21:14:26,163 INFO (MainThread) ['255,0,0']
+2019-08-16 21:14:26,164 INFO (MainThread) 192.168.0.34
+2019-08-16 21:14:26,164 INFO (MainThread) 1
+2019-08-16 21:15:47,589 INFO (MainThread) Started
+2019-08-16 21:15:57,596 INFO (MainThread) []
+2019-08-16 21:15:58,623 INFO (MainThread) ['255,0,0']
+2019-08-16 21:15:58,623 INFO (MainThread) []
+2019-08-16 21:17:56,288 INFO (MainThread) Started
+2019-08-16 21:18:06,331 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:18:16,331 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:18:24,860 INFO (MainThread) ['255,0,0']
+2019-08-16 21:18:24,860 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:18:24,860 INFO (MainThread) 192.168.0.34
+2019-08-16 21:19:37,580 INFO (MainThread) Started
+2019-08-16 21:19:47,813 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:19:57,814 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:19:58,747 INFO (MainThread) ['255,0,0']
+2019-08-16 21:19:58,747 INFO (MainThread) ['192.168.0.34']
+2019-08-16 21:19:58,747 INFO (MainThread) 192.168.0.34
